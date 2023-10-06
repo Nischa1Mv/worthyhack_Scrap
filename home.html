@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSPIP</title>
+    <link rel="shortcut icon" href="./assets/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+</head>
+<body>
+    <DIV id="up"></DIV>
+    <div class="banner">
+        <div class="navbar">
+           <img src="./assets/logo1.png" class="logo">
+           <ul>
+           <li><a href="#up">HOME</a></li>
+           <li><a href="#hello">REGISTRATION</a></li>
+           <li><a href="services.html">SERVICES</a></li>
+           <li><a href="#about">ABOUT</a></li>
+           <li> <a href="#">LogOut</a></li>
+           </ul>
+       </div>
+        <div class="content">
+            <h1>EXPLORE YOUR SERVICE</h1>
+            <p>This is the homepage of our website. Feel free to explore.</p>
+        </div>
+        <div class="search-container">
+            <br>
+            <br>&emsp;&emsp;
+
+            <div class="box">
+            <input type="text" placeholder="Search...">
+                <a href="#">
+                <box-icon name='search'></box-icon>
+             </a>
+             </div>
+
+        </div>
+   
+    </div>
+    <div id="hello"></div>
+<div id="pp">
+    <br><br><br><br><br><br>
+
+<center>
+        <form action="" id="contactForm" class="register-form"> 
+            <div class="alert"> Data is Registered</div>
+          <fieldset> 
+           <legend><b><i>Service Providers Registration</b></i></legend>
+           <br><br>
+           <label for="r1">First name:</label>
+           <input id="r1" type="text" ><br><br>
+
+       <label for="r2">Last name:</label>
+       <input id="r2" type="text"><br><br>
+
+       <label for="r3">Enterprise name:</label>
+       <input id="r3" type="text"><br><br>
+
+       <label >Services offered:</label><br><br>
+       <input id="p" type="radio" name="job" value="Plumber"><label>Plumber</label>  &emsp;
+       <input id="m" type="radio" name="job" value="Mechanic"><label>Mechanic</label> &emsp;
+       <input id="e" type="radio" name="job" value="Electrician"><label>Electrician</label>
+       <br>
+       <br> 
+       <label for="r5">Experience:</label>
+       <input id="r5" type="text"><br><br>
+       
+       <label for="r6">Availability:</label>
+       <input id="r6" type="text"><br><br>
+       
+       <label for="r7">City:</label>
+       <input id="r7" type="text"><br><br>
+       
+       <label for="r8">Locality:</label>
+       <input id="r8" type="text"><br><br>
+       
+       <label for="r9">Contact:</label>
+       <input id="r9" type="text"><br><br>
+       
+       <input type="submit" value="register">
+       <br><br>
+       </fieldset>
+       </form></center>
+    </div>
+    <div></div>
+    <section class="about-us" id="about">
+        <div class="about">
+       <img src="./assets/about.png" class="pic">
+          <div class="text">
+            <h2>About Us</h2>
+            <h5>Your Local Services  <span>Hub</span></h5>
+              <p>Welcome to <b>Locally</b>.Your trusted platform for connecting with local service providers. We are dedicated to simplifying your search for reliable and skilled professionals who can cater to your various needs. Our mission is to bridge the gap between service seekers and providers, making it easier for you to access the services you require, when you need them.</p>
+            <div class="data">
+                <center>
+            <a href="#up" class="home">⬆</a></center>
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+       <script src="mail.js"></script>
+
+</body>
+</html>

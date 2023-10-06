@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="services.css">
+    <meta charset="UTF-8">
+    <title>Service Provider Details</title>
+    <style>
+    </style>
+</head>
+<body>
+    <center>
+
+        
+        <h1>Service Provider Details</h1>
+        
+        <!-- Dropdown to select a service -->
+        <label for="service">Select a Service:</label>
+        <select id="service">
+            <option value="electrician">Electrician</option>
+        <option value="plumbing">Plumbing</option>
+        <option value="mechanic">Mechanic</option>
+    </select><br><br>
+    <input type="submit" value="Submit" onclick="updateProviderDetails()">
+    <!-- Display area for service provider details -->
+    <div id="provider-details">
+        <!-- Details for service providers will appear here -->
+    </div>
+    
+</center>
+    <script>
+        // JavaScript code for handling service selection and displaying details
+        const serviceDropdown = document.getElementById('service');
+        const providerDetails = document.getElementById('provider-details');
+        
+        // Sample data for service providers (replace with your data)
+        const serviceProviders = {
+            electrician: {
+                name: "John Doe",
+                contact: "123-456-7890",
+                location: "123 Main St"
+            },
+            plumbing: {
+                name: "Jane Smith",
+                contact: "987-654-3210",
+                location: "456 Elm St"
+            },
+            mechanic: {
+                name: "Bob Johnson",
+                contact: "555-123-4567",
+                location: "789 Oak St"
+            }
+        };
+        
+        // Function to update provider details based on selected service
+        function updateProviderDetails() {
+            const selectedService = serviceDropdown.value;
+            const provider = serviceProviders[selectedService];
+
+            if (provider) {
+                providerDetails.innerHTML = `
+                    <h2>${selectedService} Service Provider</h2>
+                    <p>Name: ${provider.name}</p>
+                    <p>Contact: ${provider.contact}</p>
+                    <p>Location: ${provider.location}</p>
+                    `;
+                } else {
+                    providerDetails.innerHTML = "<p>No service provider found for the selected service.</p>";
+                }
+            }
+            
+            // Event listener for service selection
+            serviceDropdown.addEventListener('change', updateProviderDetails);
+            // updateProviderDetails();
+            </script>
+</body>
+</html>
